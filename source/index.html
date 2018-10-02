@@ -33,11 +33,11 @@
       </nav>  	
   	</header>	
 
-    <main class="page-main">     
-      <section class="head head--maim-page">
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - измени мир вокруг!</h1>     
+      <section class="download">
       	<h2 class="visually-hidden">Наше приложение</h2>
-      	<img class="head__image" src="img/iphone-in-hand.png" width="320" height="314" alt="Hand">
-      	<div class="head__download download">
+      	<div class="download__wrapper">
       	  <button class="button download__button" type="button">Скачать приложение</button>
       	  <ul class="download__list">
       	  	<li class="download__item"><img class="download__img" src="img/apple.png" width="47" height="56" alt="Apple"></li>
@@ -48,25 +48,24 @@
       	</div>
       </section>
 
-      <section class="aboutApp">
+      <section class="promo">
         <h2 class="visually-hidden">О приложении</h2>
-        <p class="aboutApp__intro">Устали от серости мегаполиса?</p>
-        <p class="aboutApp__intro">Нам есть, что вам предложить!</p>
-        <ul class="aboutApp__list">
-          <li class="aboutApp__item">
+        <p class="promo__intro">Устали от серости мегаполиса?</p>
+        <p class="promo__intro">Нам есть, что вам предложить!</p>
+        <ul class="promo__list">
+          <li class="promo__item">
             <b>Поднимает настроение</b>
             <p>Приложение позволит вам победить<br>осеннюю хандру и депрессию <br>буквально в несколько кликов!</p>
           </li>
-          <li class="aboutApp__item">
+          <li class="promo__item">
             <b>Меняет мир вокруг</b>
             <p>Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
           </li>
-          <li class="aboutApp__item">
+          <li class="promo__item">
             <b>Заводите новых друзей</b>
             <p>Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых</p>
           </li>
         </ul>
-        <img class="aboutApp__image" src="img/iphone-screen.png" width="157" height="320" alt="Screen">
       </section>  
 
       <section class="reviews">
@@ -93,112 +92,36 @@
           </p>
         </div>
       </section>
-      	
-      <section class="offers">
-        <h2 class="visually-hidden">Предложения</h2>
-          <div class="offers__list  slider__list">
-            <table class="stats__list">
-              <tr class="stats__title">
-                <td>
-                  <b>база</b>
-                  <p>1,99 USD</p>
-                </td>
-                <td></td>
-              </tr>	
-              <tr>
-                <td class="stats__value">
-                  розовый фильтр
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/no.svg" width="27" height="26" alt="No">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  смайлики
-                </td>
-                <td>
-                  <img class="          " src="img/no.svg" width="27" height="26" alt="No">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  комментарии
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>      
-            </table>
-            <table class="stats__list">
-              <tr>
-                <td><b>стандарт</b>
-                <p>3,99 USD</p></td>
-                <td></td>
-              </tr>	
-              <tr>
-                <td class="stats__value">
-                  розовый фильтр
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  смайлики
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  комментарии
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/no.svg" width="27" height="26" alt="No">
-                </td>
-              </tr>      
-            </table>
-            <table class="stats__list">
-              <tr>
-                <td><b>анлим</b>
-                <p>9,99 USD</p></td>
-                <td></td>
-              </tr>	
-              <tr>
-                <td class="stats__value">
-                  розовый фильтр
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  смайлики
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>
-              <tr>
-                <td class="stats__value">
-                  комментарии
-                </td>
-                <td class="stats__field">
-                  <img class="          " src="img/yes.svg" width="31" height="21" alt="Yes">
-                </td>
-              </tr>      
-            </table>
-          </div>
-          <p class="offers__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-      </section>   
+
+      <div class="packages-slider">
+        <div class="packages-slider__controls slider__toggles">
+          <button class="packages-slider__controls slider__toggle" type="button">1</button>
+          <button class="packages-slider__controls slider__toggle" type="button">2</button>
+          <button class="packages-slider__controls slider__toggle" type="button">3</button>          
+        </div>
+        <div class="packages-slider__inner">
+          <div class="packages-slider__slides">
+            <ul>
+              <li>база<br><span class="packages-slider__price">1,99 USD</span></li>
+              <li><span class="packages-slider__text">розовый фильтр</span><img class="packages-slider__img packages-slider__img--no" src="img/no.svg" width="27" height="26" alt="No"></li>
+              <li><span class="packages-slider__text">смайлики</span><img class="packages-slider__img packages-slider__img--no" src="img/no.svg" width="27" height="26" alt="No"></li>
+              <li><span class="packages-slider__text">комментарии</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+            </ul>
+            <ul>
+              <li>стандарт<br><span class="packages-slider__price">3,99 USD</span></li>
+              <li><span class="packages-slider__text">розовый фильтр</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+              <li><span class="packages-slider__text">смайлики</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+              <li><span class="packages-slider__text">комментарии</span><img class="packages-slider__img packages-slider__img--no" src="img/no.svg" width="27" height="26" alt="No"></li>
+            </ul>
+            <ul>
+              <li>анлим<br><span class="packages-slider__price">9,99 USD</span></li>
+              <li><span class="packages-slider__text">розовый фильтр</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+              <li><span class="packages-slider__text">смайлики</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+              <li><span class="packages-slider__text">комментарии</span><img class="packages-slider__img packages-slider__img--yes" src="img/yes.svg" width="31" height="21" alt="Yes"></li>
+            </ul>     
+          </div>    
+        </div>    
+      </div>  
     </main>
 
     <footer class="page-footer">
