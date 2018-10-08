@@ -8,106 +8,110 @@
   </head>
   <body>
 
-  	<header class="page-header">
-  	  <a class="page-header__logo">	
-  	    <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Pink">
-  	  </a>
-  	  <nav class="main-nav">
-  	  	<button class="main-nav__toggle" type="button">Открыть меню</button>
-  	  	<div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>  	
-  	</header>	
+  <header class="page-header">
+    <a class="page-header__logo"><img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Pink"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main class="page-main">
-         
       <section class="main-title">
         <div class="main-title__wrapper">
-          <h1 class="main-title__header">Фотографии<br> пользователей</h1> 
+          <h1 class="main-title__header">Фотографии<br> пользователей</h1>
         </div>
-      </section>   
-
+      </section>
+  	
       <section class="photos">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
         <p class="photos__intro">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         <ul class="photos__list">
-          <li class="photos__item photos__item--hit">
-            <img class="photos__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Panorama">
-            <b class="photos__author">Анна<span class="photos__time">(5 минут назад)</span></b>
-            <p class="photos__cite">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <li class="photos__item">
+            <img class="photos__image photos__image--panorama" src="img/panorama-mobile.jpg" width="320" height="137" alt="Panorama">
+            <cite class="photos__author">Анна</cite>
+            <time class="photos__time">(5 минут назад)</time>
+            <p class="photos__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photos__like">
-              <p>нравится:<span>215</span></p> 
+              <p>нравится:<span>215</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Левон<span class="photos__time">(5 часов назад)</span></b>
-            <p class="photos__cite">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <cite class="photos__author">Левон</cite>
+            <time class="photos__time">(5 часов назад)</time>
+            <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photos__like">
-              <p>нравится:<span>356</span></p> 
+              <p>нравится:<span>356</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Антон<span class="photos__time">(12 часов назад)</span></b>
-            <p class="photos__cite">Соседи будут рады!</p>
+            <cite class="photos__author">Антон</cite>
+            <time class="photos__time">(12 часов назад)</time>
+            <p class="photos__comment">Соседи будут рады!</p>
             <div class="photos__like">
-              <p>нравится:<span>666</span></p> 
+              <p>нравится:<span>666</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Борис<span class="photos__time">(20 часов назад)</span></b>
-            <p class="photos__cite">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <cite class="photos__author">Борис</cite>
+            <time class="photos__time">(20 часов назад)</time>
+            <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photos__like">
-              <p>нравится:<span>215</span></p> 
+              <p>нравится:<span>215</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Сергей<span class="photos__time">(25 часов назад)</span></b>
-            <p class="photos__cite">Самая кубанская в мире!</p>
+            <cite class="photos__author">Сергей</cite>
+            <time class="photos__time">(25 часов назад)</time>
+            <p class="photos__comment">Самая кубанская в мире!</p>
             <div class="photos__like">
-              <p>нравится:<span>356</span></p> 
+              <p>нравится:<span>356</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Максим<span class="photos__time">(40 часов назад)</span></b>
-            <p class="photos__cite">Где снег-то?</p>
+            <cite class="photos__author">Максим</cite>
+            <time class="photos__time">(40 часов назад)</time>
+            <p class="photos__comment">Где снег-то?</p>
             <div class="photos__like">
-              <p>нравится:<span>150</span></p> 
+              <p>нравится:<span>150</span></p>
             </div>
           </li>
           <li class="photos__item">
             <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <b class="photos__author">Надежда<span class="photos__time">(45 часов назад)</span></b>
-            <p class="photos__cite">Всем GM и взаимные лайки!</p>
+            <cite class="photos__author">Надежда</cite>
+            <time class="photos__time">(45 часов назад)</time>
+            <p class="photos__comment">Всем GM и взаимные лайки!</p>
             <div class="photos__like">
-              <p>нравится:<span>2560</span></p> 
+              <p>нравится:<span>2560</span></p>
             </div>
           </li>
-        </ul>   
+        </ul>
       </section>
 
       <section class="load">
         <h2 class="visually-hidden">Загрузите свою фотографию!</h2>
         <div class="load__content">
-          <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>  
+          <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="load__window">
           <img class="load__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Photo7">
@@ -123,12 +127,12 @@
                 <div class="load__range-toggle range-toggle-min"></div>
                 <div class="load__range-toggle range-toggle-max"></div>
               </div>
-            </div>    
+            </div>
           </div>
           <button class="load__button load__button--submit" type="button">Запостить</button>
           <button class="load__button load__button--reset" type="button">Отмена</button>
-        </div>  
-      </section> 
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
