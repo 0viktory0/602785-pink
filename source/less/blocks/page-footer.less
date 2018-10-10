@@ -1,0 +1,41 @@
+.page-footer {
+  margin: 0 auto;
+  margin-top: 45px;
+  min-height: 565px;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 940px;
+
+  }
+}
+
+
+
+.page-footer__map {
+  min-height: 200px;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
