@@ -1,34 +1,27 @@
 .promo {
-  width: 280px;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 43px;
-  padding-bottom: 290px;
-}
-
-@media (min-width: @tablet-width) {
-  .promo {
-    width: 620px;
-}
-}
-
-@media (min-width: @desktop-width) {
-  .promo {
-  width: 940px;
-  margin: 0 auto;
-
-}
+  .container-fluid();
 }
 
 .promo__intro {
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
+  margin-top: 45px;
 
   font-size: 24px;
   font-weight: 300;
   line-height: 26px;
-  text-align: center;;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 59px;
+  }
 }
 
 .promo__item h3 {
@@ -39,6 +32,13 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+  }
 }
 
 .promo__item p {
@@ -50,62 +50,67 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .promo__item {
-    width: 310px;
-    margin-left: auto;
-    padding-bottom: 0;
-
-    text-align: left;
-}
-}
-
-@media (min-width: @desktop-width) {
-  .promo__item {
-   width: 245px;
-    margin-left: 0;
-    padding-top: 358px;
-
-    text-align: center;
-}
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .promo__list {
-  min-height: 700px;
+  .style-reset();
+  margin: 0 auto;
   margin-top: 85px;
+  width: 320px;
+  padding-bottom: 280px;
 
   background-color: #f2f2f2;
-  list-style: none;
   text-align: center;
 
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 507px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: @tablet-width) {
-  .promo__list {
+  @media (min-width: @tablet-width) {
     position: relative;
 
     min-height: 400px;
+    width: 620px;
 
     padding-top: 123px;
     padding-bottom: 9px;
 
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left bottom;
-}
-}
+  }
 
-@media (min-width: @desktop-width) {
-  .promo__list {
+  @media (min-width: @desktop-width) {
+    width: 940px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 77px 28px 0 28px;
 
     background-image: none;
+  }
 }
+
+
+.promo__item {
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin-left: auto;
+    padding-bottom: 0;
+
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-left: 0;
+    padding-top: 358px;
+
+    text-align: center;
+  }
 }
+

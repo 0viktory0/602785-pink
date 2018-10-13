@@ -1,21 +1,17 @@
 .packages-slider {
-  background-color: #f2f2f2;
-
   padding-top: 90px;
+  .container-fluid();
 }
 
 .packages-slider__inner {
-  width: 620px;
-}
-
-
-
-@media (min-width: @desktop-width) {
-  .packages-slider__inner {
-    width: 940px;
-    }
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  @media (min-width: @tablet-width) {
+    width: 660px;
   }
 
-.packages-slider ul {
-  list-style: none;
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }

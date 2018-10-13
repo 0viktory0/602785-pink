@@ -10,30 +10,27 @@
   background-position: 0 0;
   background-color: #1d2631;
 
-}
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-@media (min-width: @tablet-width) {
-  .download {
-  width: 620px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  background-image: url("../img/iphone-hand-tablet@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
-}
 
-
-@media (min-width: @desktop-width) {
-  .download {
+  @media (min-width: @desktop-width) {
     width: 940px;
+
+    padding-left: 130px;
+    padding-right: 130px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-  }
+}
 
 .download__info {
   line-height: 21px;
@@ -45,10 +42,10 @@
 .download__list {
   display: flex;
   justify-content: space-between;
-
-  list-style: none;
   align-items: center;
   width: 207px;
+
+  .style-reset();
 
   margin: 0 auto;
   margin-bottom: 14px;
@@ -58,10 +55,8 @@
 
 .download__slogan {
    display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .download__slogan {
+  @media (min-width: @tablet-width) {
     display: block;
     margin: 0;
     margin-bottom: 33px;
@@ -72,10 +67,8 @@
     line-height: 47px;
     text-align: center;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .download__slogan {
+  @media (min-width: @desktop-width) {
     margin-bottom: 52px;
 
     font-size: 50px;
@@ -83,25 +76,19 @@
   }
 }
 
-
 .download__wrapper {
   width: 280px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-right: 20px;
   margin-left: 20px;
-}
 
-
-@media (min-width: @tablet-width) {
-  .download__wrapper {
+  @media (min-width: @tablet-width) {
     width: 300px;
     margin-right: auto;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .download__wrapper {
+  @media (min-width: @desktop-width) {
     width: 300px;
     margin-right: auto;
   }
