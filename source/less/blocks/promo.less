@@ -1,25 +1,43 @@
 .promo {
-  padding-top: 42px;
-  padding-bottom: 290px;
+  .container-fluid();
 }
 
 .promo__intro {
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
+  margin-top: 45px;
 
   font-size: 24px;
-  line-height: 29px; 
-  font-weight: lighter; 
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
-.promo__item b {
+.promo__item h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 
   font-size: 18px;
-  line-height: 24px;        
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .promo__item p {
@@ -28,14 +46,69 @@
   margin-bottom: 30px;
 
   font-size: 14px;
-  line-height: 24px; 
-  font-weight: 400;        
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .promo__list {
-  background-color: #f2f2f2;
-
+  .style-reset();
+  margin: 0 auto;
   margin-top: 85px;
+  width: 320px;
+  padding-bottom: 280px;
+
+  background-color: #f2f2f2;
+  text-align: center;
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: center 507px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    min-height: 400px;
+    width: 620px;
+
+    padding-top: 123px;
+    padding-bottom: 9px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: left bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-image: none;
+  }
 }
 
 
+.promo__item {
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin-left: auto;
+    padding-bottom: 0;
+
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-left: 0;
+    padding-top: 358px;
+
+    text-align: center;
+  }
+}
