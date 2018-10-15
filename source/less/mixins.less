@@ -1,0 +1,38 @@
+.style-reset() {        /*стили для списков*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.container-fluid() {
+  width: auto;
+  padding: 0 6%;
+
+  @media (min-width: 660px) {
+    width: 94%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.font(@font-size: 14px, @font-weight: 400) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.wrapper() {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 620px;
+  }
+
+   @media (min-width: 960px) {
+    width: 940px;
+  }
+}

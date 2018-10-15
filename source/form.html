@@ -44,7 +44,8 @@
 
       <section class="feedback">
         <h2 class="visually-hidden">Заполни форму и выйграй приз!</h2>
-        <p class="feedback__intro">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <p class="feedback__intro">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!
+        <span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="feedback__form form" action="/echo" method="post">
           <fieldset class="form__user-fieldset">
             <ul class="form__list">
@@ -55,10 +56,6 @@
               <li class="form__item">
                 <label>Имя:</label>
                 <input type="text" name="name" placeholder="Введите ваше имя *">
-              </li>
-              <li class="form__item">
-                <label>Отчество:</label>
-                <input type="text" name="patronym" placeholder="Ну и отчество тоже">
               </li>
               <li class="form__item">
                 <label>Отчество:</label>
@@ -128,7 +125,10 @@
             <label for="user-text">опишите свои эмоции</label>
             <input id="user-text" type="text" name="text" placeholder="В свободной форме">
           </fieldset>
-          <input class="form__submit-button" type="submit" value="Отправить форму">
+          <div class="form__button-wrapper">
+            <input class="form__submit-button" type="submit" value="Отправить форму">
+            <p class="form__addition"><b>*</b> - обязательные <span>для заполнения</span> поля</p>
+          </div>
         </form>
       </section>
     </main>
