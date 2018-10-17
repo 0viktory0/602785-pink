@@ -1,7 +1,9 @@
 .download {
+  position: relative;
   width: 320px;
   margin: 0 auto;
-  padding-top: 420px;
+  padding-top: 220px;
+  z-index: 1;
 
   color: #ffffff;
 
@@ -67,8 +69,6 @@
 
   margin: 0 auto;
   margin-bottom: 14px;
-
-  background-color: #1d2631;
 }
 
 .download__slogan {
@@ -95,6 +95,7 @@
 }
 
 .download__wrapper {
+ position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
   .container-fluid();
@@ -105,6 +106,8 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
+    padding-top: 75px;
+    padding-bottom: 108px;
   }
 
   @media (min-width: @tablet-width) {
