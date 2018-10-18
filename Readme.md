@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория](https://up.htmlacademy.ru/adaptive/15/user/602785).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лёмина](https://htmlacademy.ru/profile/id83874).
 
 ---
 
