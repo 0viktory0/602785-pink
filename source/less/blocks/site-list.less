@@ -2,11 +2,19 @@
   position: relative;
   border-bottom: 1px solid #000;
   border-top: 1px solid #485461;
-  margin-right: 78px;
+
+
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+    border-top: none;
+  }
 }
 
 .site-list__item:last-child {
-  margin-right: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 
@@ -17,4 +25,5 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
 }

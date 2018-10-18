@@ -1,0 +1,94 @@
+.form {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.form__submit-button {
+  margin-bottom: 45px;
+}
+
+.form__list {
+  list-style: none;
+}
+
+.form__user-fieldset label,
+legend,
+.form__contact-fieldset label,
+.form__text-fieldset label {
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__submit-button {
+  display: block;
+  width: 280px;
+  padding: 16px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2aab6d;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.form__button-wrapper {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.form__addition {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  text-transform: uppercase;
+}
+
+.form__addition b {
+  color: #d22856;
+}
+
+.form__addition span {
+  display: none;
+
+@media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
