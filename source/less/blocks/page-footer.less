@@ -45,9 +45,25 @@
 .page-footer__map {
   min-height: 200px;
 
-  width: 100%;
+}
 
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.page-footer__container {
+   display: none;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 1200px;
+  }
 }

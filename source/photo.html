@@ -8,13 +8,20 @@
   </head>
   <body>
 
-  <header class="page-header">
-    <div class="page__wrapper">
-      <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Pink">
-      </a>
+
+ <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+       </div> 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -44,7 +51,13 @@
         <h2 class="visually-hidden">Фотографии пользователей</h2>
         <p class="photos__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photos__panorama-item">
-            <img class="photos__image photos__image--panorama" src="img/panorama.jpg" width="320" height="137" alt="Panorama">
+
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+               <img class="photos__image photos__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Panorama">
+            </picture>
+
             <div class="photos__wrapper">
               <cite class="photos__author">Анна</cite>
               <time class="photos__time">(5 минут назад)</time>
@@ -56,57 +69,95 @@
         </div>
         <ul class="photos__list">
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Левон</cite>
-            <time class="photos__time">(5 часов назад)</time>
-            <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photos__like">
-              <p>нравится:<span>356</span></p>
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Левон</cite>
+              <time class="photos__time">(5 часов назад)</time>
+              <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photos__like">
+                <p>нравится:<span>356</span></p>
+              </div>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Антон</cite>
-            <time class="photos__time">(12 часов назад)</time>
-            <p class="photos__comment">Соседи будут рады!</p>
-            <div class="photos__like">
-              <p>нравится:<span>666</span></p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Антон</cite>
+              <time class="photos__time">(12 часов назад)</time>
+              <p class="photos__comment">Соседи будут рады!</p>
+              <div class="photos__like">
+                <p>нравится:<span>666</span></p>
+              </div>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Борис</cite>
-            <time class="photos__time">(20 часов назад)</time>
-            <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photos__like">
-              <p>нравится:<span>215</span></p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Борис</cite>
+              <time class="photos__time">(20 часов назад)</time>
+              <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photos__like">
+                <p>нравится:<span>215</span></p>
+              </div>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Сергей</cite>
-            <time class="photos__time">(25 часов назад)</time>
-            <p class="photos__comment">Самая кубанская в мире!</p>
-            <div class="photos__like">
-              <p>нравится:<span>356</span></p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Сергей</cite>
+              <time class="photos__time">(25 часов назад)</time>
+              <p class="photos__comment">Самая кубанская в мире!</p>
+              <div class="photos__like">
+                <p>нравится:<span>356</span></p>
+              </div>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Максим</cite>
-            <time class="photos__time">(40 часов назад)</time>
-            <p class="photos__comment">Где снег-то?</p>
-            <div class="photos__like">
-              <p>нравится:<span>150</span></p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Максим</cite>
+              <time class="photos__time">(40 часов назад)</time>
+              <p class="photos__comment">Где снег-то?</p>
+              <div class="photos__like">
+                <p>нравится:<span>150</span></p>
+              </div>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Photo1">
-            <cite class="photos__author">Надежда</cite>
-            <time class="photos__time">(45 часов назад)</time>
-            <p class="photos__comment">Всем GM и взаимные лайки!</p>
-            <div class="photos__like">
-              <p>нравится:<span>2560</span></p>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Photo1">
+            </picture>
+            <div class="photos__item--container">
+              <cite class="photos__author">Надежда</cite>
+              <time class="photos__time">(45 часов назад)</time>
+              <p class="photos__comment">Всем GM и взаимные лайки!</p>
+              <div class="photos__like">
+                <p>нравится:<span>2560</span></p>
+              </div>
+
             </div>
           </li>
         </ul>
@@ -118,18 +169,19 @@
           <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="load__window">
-          <img class="load__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Photo7">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="load__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Photo7">
+          </picture>
           <div class="load__tools">
-            <img class="load__img" src="img/crop.svg" width="44" height="44" alt="crop">
-            <img class="load__img" src="img/fill.svg" width="48" height="43" alt="fill">
-            <img class="load__img" src="img/contrast.svg" width="32" height="32" alt="contrast">
+            <img class="load__img" src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
+            <img class="load__img" src="img/icon-editor-fill.svg" width="48" height="43" alt="fill">
+            <img class="load__img" src="img/icon-editor-contrast.svg" width="32" height="32" alt="contrast">
             <div class="load__filter-range">
               <div class="load__range-controls">
-                <div class="load__scale">
-                  <div class="load__bar"></div>
-                </div>
-                <div class="load__range-toggle range-toggle-min"></div>
-                <div class="load__range-toggle range-toggle-max"></div>
+                <div class="load__scale"></div>
+                <div class="load__range-toggle"></div>
               </div>
             </div>
           </div>
@@ -141,7 +193,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logotype" src="img/logotype.svg" width="147" height="40" alt="Pink">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+    </picture>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -162,4 +218,6 @@
       </div>
     </footer>
   </body>
+
 </html>
+
